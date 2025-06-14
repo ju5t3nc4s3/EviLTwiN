@@ -598,12 +598,12 @@ void menu() {
         u8g2.setFontMode(1);
         u8g2.setBitmapMode(1);
         u8g2.setFont(u8g2_font_6x10_tr);
-        u8g2.drawStr(40, 21, "wit oled");
+        u8g2.drawStr(40, 21, "wit oled+sd");
         u8g2.setFont(u8g2_font_6x13_tr);
         u8g2.drawStr(2, 10, "Evil-twin + deauther");
         u8g2.setFont(u8g2_font_6x10_tr);
         u8g2.drawStr(31, 32, "Version 0.1");
-        u8g2.drawStr(1, 44, "code by Penticon");
+        u8g2.drawStr(1, 44, "code by Ju5t3nc4s3");
         u8g2.sendBuffer();
     if (digitalRead(BUTTON_OK) == LOW) {
       delay(150);
