@@ -132,10 +132,9 @@ void setup() {
   u8g2.setFontMode(1);
   u8g2.setBitmapMode(1);
   u8g2.setFont(u8g2_font_6x13_tr);
-  u8g2.drawStr(33, 13, "Delil-twin ");
-  u8g2.drawStr(39, 26, "wit oled");
+  u8g2.drawStr(33, 13, "EviLTwiN ");
   u8g2.drawStr(56, 37, "by");
-  u8g2.drawStr(37, 50, "@penticon");
+  u8g2.drawStr(37, 50, "Ju5t3nc4s3");
   u8g2.setFont(u8g2_font_6x10_tr);
   u8g2.drawStr(51, 60, "V0.1");
   u8g2.sendBuffer();
@@ -152,7 +151,7 @@ void setup() {
   WiFi.mode(WIFI_AP_STA);
   wifi_promiscuous_enable(1);
   WiFi.softAPConfig(IPAddress(192, 168, 4, 1) , IPAddress(192, 168, 4, 1) , IPAddress(255, 255, 255, 0));
-  WiFi.softAP("wifi?", "esp12345");
+  WiFi.softAP("EviLTwiN", "LivEEviL");
   dnsServer.start(53, "*", IPAddress(192, 168, 4, 1));
 
   webServer.on("/", handleIndex);
@@ -257,7 +256,7 @@ void handleIndex() {
       int n = WiFi.softAPdisconnect (true);
       Serial.println(String(n));
       WiFi.softAPConfig(IPAddress(192, 168, 4, 1) , IPAddress(192, 168, 4, 1) , IPAddress(255, 255, 255, 0));
-      WiFi.softAP("wifi?", "esp12345");
+      WiFi.softAP("EviLTwiN", "LivEEviL");
       dnsServer.start(53, "*", IPAddress(192, 168, 4, 1));
     }
     return;
@@ -369,7 +368,7 @@ void handleAdmin() {
       int n = WiFi.softAPdisconnect (true);
       Serial.println(String(n));
       WiFi.softAPConfig(IPAddress(192, 168, 4, 1) , IPAddress(192, 168, 4, 1) , IPAddress(255, 255, 255, 0));
-      WiFi.softAP("wifi?", "esp12345");
+      WiFi.softAP("EviLTwiN", "LivEEviL");
       dnsServer.start(53, "*", IPAddress(192, 168, 4, 1));
     }
     return;
@@ -644,7 +643,7 @@ void menu() {
             int n = WiFi.softAPdisconnect(true);
             Serial.println(String(n));
             WiFi.softAPConfig(IPAddress(192,168,4,1), IPAddress(192,168,4,1), IPAddress(255,255,255,0));
-            WiFi.softAP("wifi?", "esp12345");
+            WiFi.softAP("EviLTwiN", "LivEEviL");
             dnsServer.start(53, "*", IPAddress(192,168,4,1));
           }
           return; // Exit after processing hotspot command.
